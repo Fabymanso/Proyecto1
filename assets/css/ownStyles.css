@@ -4,12 +4,59 @@
 }
 
 .content h1 {
-  color: white;
+  color: black;
 }
 
 .content ul li a {
   background-color: white;
 }
+
+.navegacion {
+  width: 800px;
+  margin: 30px;
+  background: rgb(124, 229, 233);
+}
+
+.navegacion ul{
+  list-style: none;
+}
+
+.menu > li{
+  /*position: relative;*/
+  display: inline-block;
+}
+
+.menu > li > a{
+  display: block;
+  padding: 15px 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration: none;
+}
+
+.menu li a:hover{
+  color: blue;
+  transition: all .5s;
+}
+
+/*Submenu*/
+
+.submenu{
+  position :absolute;
+  width: 120%;
+  display: none;
+ }
+
+ .submenu li a{
+  display: block;
+  padding: 0px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration: none;
+ }
+
+ .menu li:hover .submenu{
+    display: block;
+ }
+
 
 #loading {
   display: block;
